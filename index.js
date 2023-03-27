@@ -5,6 +5,7 @@ const wineBtn = document.getElementById("wine-btn");
 const darkmode = document.getElementById("dark-mode");
 const remove = document.getElementById("remove");
 const foodslip = document.getElementById("food-slip");
+const checkouttick = document.getElementById("checkout-tick");
 
 const foodOrder = [
   {
@@ -65,15 +66,15 @@ function renderItem() {
 
     toDisplay += `
       <div class = "food-slip" id="food-slip">
-      <h2>
-      ${curr.name}<span class="span-quantity"> x${curr.quantity}</span>
+      <h2 class="food-slip-2">
+      ${curr.name}<span class="span-quantity">  x${curr.quantity}</span>
+      
       <div class="remove-btn" id="remove" onclick="handleDelete('${
         curr.name
       }','${index}','${curr.quantity}')">🗑️</div>
       </h2>
       
-      <h2>$
-      ${curr.price * curr.quantity} 
+      <h2>$${curr.price * curr.quantity} 
       </h2>
       
       </div>
@@ -83,17 +84,21 @@ function renderItem() {
   toDisplay += `<div class="bill-line" id="bill-line"></div>`;
   toDisplay += `<div class="total">
   <h2>Total Cost</h2>
-  <h2>$ ${total}</h2>
+  <h2>$${total}</h2>
   </div>`;
   toDisplay += `
-  <div class="complete-btn">
-  <h1>
-  Complete Order
+  <div class="complete-btn"  onclick="checkout()">
+  <div>
+  <h1 id="checkout-tick">
+  <i class="fa-brands fa-apple"></i>Pay
   </h1>
   </div>
+  </div>
   `;
+  // Complete Order
   displayEl.innerHTML = toDisplay;
 }
+
 function addItem(e) {
   const name = e.currentTarget.getAttribute("data-name");
   const price = e.currentTarget.getAttribute("data-price");
@@ -157,3 +162,15 @@ darkmode.addEventListener("click", () => {
     darkwhite.style.color = "#000000";
   }
 });
+let string = "";
+function checkout() {
+  console.log("worked");
+  setTimeout(() => {
+    console.log("working in 2s");
+    // console.log((string = "Done"));
+  }, 2000);
+}
+// console.log((checkouttick.innerHTML = string));
+{
+  /* <i class="fa-sharp fa-regular fa-circle-check"></i>; */
+}
