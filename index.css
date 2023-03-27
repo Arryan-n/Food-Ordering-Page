@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  width: 100vw;
+  display: block;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "Smythe", "cursive";
+}
+.head-img {
+  background: url("images/burgur.png");
+  height: 150px;
+  color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+}
+.img-txt {
+  margin: 0px;
+  padding: 15px 27px;
+}
+.dark-mode {
+  display: flex;
+  cursor: pointer;
+}
+.dark-mode p {
+  margin-top: 8px;
+}
+h3 {
+  font-size: 35px;
+  margin: 0px;
+}
+p {
+  font-size: 22px;
+  margin-top: 0px;
+}
+/*here main section starts*/
+.div-food {
+  display: flex;
+  margin: 0px;
+  border-bottom: 1.5px solid brown;
+  gap: 10%;
+}
+.emoji {
+  font-size: 4em;
+  width: 50px;
+  margin-top: 5px;
+}
+.box {
+  display: flex;
+}
+.orders {
+  width: 350px;
+}
+.orders h3,
+p {
+  margin: 0px;
+}
+.btn {
+  margin: 27px 0;
+  border: none;
+}
+.btn button {
+  font-size: 27px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*pay slip section starts*/
+.pay-slip {
+  display: block;
+  width: 150px;
+  margin: auto;
+}
+.pay-slip h2 {
+  line-height: 5px;
+  font-size: 38px;
+  font-weight: normal;
+}
+.food-slip {
+  display: flex;
+  justify-content: space-between;
+}
+.food-slip h2 {
+  margin: 0px;
+}
+.bill-line {
+  border-bottom: 2.5px solid brown;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.span-quantity {
+  color: brown;
+}
+.complete-btn {
+  text-align: center;
+  background: #16db99;
+  margin: 0;
+  color: white;
+}
+.complete-btn h1 {
+  padding: 10px;
+}
+.remove-btn {
+  display: inline;
+  cursor: pointer;
+}
+
+/*form section*/
+#card-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#card-details h1 {
+  line-height: 2rem;
+  font-size: 40px;
+}
+.card-box {
+  border: 1px solid brown;
+}
+#card-details input[type],
+input {
+  padding: 5px 80px;
+  margin: 10px;
+}
