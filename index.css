@@ -87,9 +87,13 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.food-slip-2 {
+  display: flex;
+}
 .food-slip h2 {
   margin: 0px;
 }
+
 .bill-line {
   border-bottom: 2.5px solid brown;
 }
@@ -97,18 +101,44 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.total h2 {
+  margin-left: 0px;
+}
 .span-quantity {
   color: brown;
 }
 .complete-btn {
   text-align: center;
   background: #16db99;
+  /* background: #000000; */
   margin: 0;
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+.complete-btn .fa-apple {
+  color: #1e3050;
+}
+.complete-btn h1 {
+  color: #1e3050;
 }
 .complete-btn h1 {
   padding: 10px;
 }
+.complete-btn:hover,
+.fa-apple:hover {
+  background: #1e3050;
+  transition: 1s ease-out;
+  color: white;
+}
+.complete-btn .fa-apple:hover {
+  color: white;
+}
+.complete-btn h1:hover {
+  color: white;
+}
+
 .remove-btn {
   display: inline;
   cursor: pointer;
@@ -116,7 +146,7 @@ p {
 
 /*form section*/
 #card-details {
-  display: flex;
+  display: none;
   flex-direction: column;
   text-align: center;
 }
@@ -131,4 +161,18 @@ p {
 input {
   padding: 5px 80px;
   margin: 10px;
+}
+.pay {
+  display: flex;
+}
+
+.pay h2 {
+  margin: auto;
+  margin-right: 20px;
+}
+.pay img,
+h2 {
+  /* display: flex; */
+  width: 20px;
+  margin-left: 220px;
 }
